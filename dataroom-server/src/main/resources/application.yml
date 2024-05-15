@@ -26,6 +26,12 @@ spring:
     static-path-pattern: /static/**
     pathmatch:
       matching-strategy: ANT_PATH_MATCHER
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://rm-8vbszau5ftled8pn7.mysql.zhangbei.rds.aliyuncs.com/dataroom?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai&allowMultiQueries=true
+    username: rw_data_platform
+    password: 8C6l4jTKhRAmUsnX
   web:
     resources:
       static-locations: classpath:/static/,classpath:/META-INF/resources/,classpath:/META-INF/resources/webjars/,file:${gc.starter.file.basePath}
