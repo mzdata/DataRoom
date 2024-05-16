@@ -46,3 +46,11 @@ mybatis-plus:
     db-config:
       #主键类型  0:"数据库ID自增", 1:"用户输入ID",2:"全局唯一ID (数字类型唯一ID)", 3:"唯一ID";
       id-type: AUTO
+
+gc:
+  starter:
+    file:
+      # 一个存储文件的绝对路径，需要有写入权限
+      basePath: /root/dataroom
+      # 静态资源访问接口前缀
+      urlPrefix: http://dashboard.timestone.mzdata.top/bigScreenServer/static/
